@@ -46,7 +46,7 @@ export default {
   },
   async asyncData({ app }) {
     const res = await app.$axios.$get(
-      'https://uou83qyqb8.execute-api.ap-northeast-1.amazonaws.com/Prod/hourly/01101'
+      'https://weather-api.apl.oumanoshasin.com/v1/hourly/01101'
     )
     return {
       cityname: res.cityname,
